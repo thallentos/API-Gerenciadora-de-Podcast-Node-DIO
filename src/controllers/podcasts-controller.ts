@@ -8,8 +8,13 @@ export const getListEpisodes = async (
     "Content-Type": "application/json",
   });
   res.end(
-    JSON.stringify({
-      name: "thallentos é o brabo",
-    })
+    JSON.stringify([
+      {
+        podcastName: "flow",
+        episode: "DILERA - Flow #375",
+        videoId: "LbBNooBc-E8",
+        categories: ["deficiência", "tourette"],
+      },
+    ])
   );
 };
