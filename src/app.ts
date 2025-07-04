@@ -10,7 +10,7 @@ import { HttpMethod } from "./utils/http-methods";
 export const app = async (request: http.IncomingMessage, response: http.ServerResponse) => {
   // queryString
   // https://localhost:3333/api/episode?podcastName=flow
-  const [baseUrl, queryString] = request.url?.split("?") ?? ["", ""];
+  const baseUrl = request.url?.split("?")[0];
 
   // listar podcasts
   if (request.method === HttpMethod.GET && baseUrl === Routes.LIST) {
