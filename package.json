@@ -19,7 +19,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/thallentos/API-Gerenciadora-de-Podcast-Node-DIO/issues"
   },
